@@ -28,7 +28,7 @@ Adafruit_SHT4x sht4 = Adafruit_SHT4x();
 
 
 //const char* ssid     = "REK-PRIVAT";
-//const char* password = "uprek2015";
+//const char* password = "********";
 //REK-PRIVAT
 //uprek2015
 //MAC >> 70:04:1D:CD:C3:DC
@@ -36,14 +36,14 @@ Adafruit_SHT4x sht4 = Adafruit_SHT4x();
 
 const char *ssid = "eduroam"; // Eduroam 
 #define EAP_IDENTITY "vojko.rajh@upr.si" 
-#define EAP_PASSWORD "vojraj69" 
+#define EAP_PASSWORD "********" 
 
 
 WiFiClient wifiClient;
 MqttClient mqttClient(wifiClient);
 WiFiServer server(80);
 
-const char broker[] = "89.142.199.226";
+const char broker[] = "1.1.1.1"; // ip od domačega ruterja
 int        port     = 1883;
 
 JsonDocument doc;
